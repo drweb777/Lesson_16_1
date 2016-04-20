@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="beychuk.ua.lesson_15.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12pt"
+        android:text="Список групп" />
+    <ListView
+        android:id="@+id/lvGroups"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/btnAddG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить G"
+            android:onClick="btnClick"
+            />
+        <Button
+            android:id="@+id/btnDeleteG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить G"
+            android:onClick="btnClick"
+            />
+        <Button
+            android:id="@+id/btnUpdateG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обновить G"
+            android:onClick="btnClick"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/btnAddF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить F"
+            android:onClick="btnClick"
+            />
+        <Button
+            android:id="@+id/btnDeleteF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить F"
+            android:onClick="btnClick"
+            />
+        <Button
+            android:id="@+id/btnUpdateF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обновить F"
+            android:onClick="btnClick"
+            />
+    </LinearLayout>
+</LinearLayout>
